@@ -298,7 +298,25 @@ function resetGame() {
     clicks = 0;
     matchedPairs = 0;
 
+    timeLeft = 0;
+
     $("#clicks").text(0);
     $("#matched").text(0);
+    $("#timer").text(0);
     $("#message").text("");
+
+    $("#left").text(0);
 }
+
+let isRedTheme = false;
+
+$("#themeBtn").on("click", function () {
+
+    isRedTheme = !isRedTheme;
+
+    $("body").toggleClass("red-theme");
+
+    $(this).text(
+        isRedTheme ? "Default Theme" : "Red Theme"
+    );
+});

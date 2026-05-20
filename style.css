@@ -193,3 +193,7 @@ button:hover, select:hover {
     font-weight: bold;
     color: #00e5ff;
 }
+
+body.red-theme {
+    background: radial-gradient(circle at top, #3a0000, #120000);
+}
